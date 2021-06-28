@@ -1,8 +1,11 @@
-let itemsContainer1 = document.getElementById("clothing-container");
-let itemsContainer2 = document.getElementById("accessories-container");
+let Container1 = document.getElementById("clothing-container");
+
+let Container2 = document.getElementById("accessories-container");
+
 fetch('https://5d76bf96515d1a0014085cf9.mockapi.io/product')
 .then(res => res.json())
 .then((productList)=>{
+   
     for(let product of productList){
         let item = document.createElement("div");
         item.className = "item";
@@ -31,17 +34,13 @@ fetch('https://5d76bf96515d1a0014085cf9.mockapi.io/product')
         itemContent.appendChild(itemPrice);
         item.appendChild(itemContent);
         if(product.isAccessory){
-            itemsContainer2.appendChild(item)
+            Container2.appendChild(item)
         }
         else{
             
-            itemsContainer1.appendChild(item);
+            Container1.appendChild(item);
         }
     }
-});
-$('.carousel').carousel({
-    interval: 2000,
-    pause: true
 });
 var productList = window.localStorage.getItem('product-list');
 productList = productList === null || productList === '' ? [] : productList;

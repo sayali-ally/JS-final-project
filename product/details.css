@@ -9,7 +9,7 @@ html, body {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-/* NAVBAR STYLING */
+
 nav{
     display:flex;
     justify-content: space-around;
@@ -90,7 +90,7 @@ nav{
     top: -5px;
     left: 10px;
 }
-/* PRODUCT SECTION */
+
 .product{
     display: flex;
     max-width: 1200px;
@@ -186,11 +186,9 @@ nav{
 .bigger {
     transform: scale(1.1, 1.1);
 }
-/* FOOTER SECTION */
+
 footer{
     background-color: black;
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
     height: 200px;
     padding: 30px;
