@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/08f3ea6832.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="checkout.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="../index.html"><span id="logo-color">shop</span>lane</a></div>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#clothing-container">Clothings</a>
+          <a href="../index.html#accessories-container">Accessories</a>
+        </div>
+        <div class="nav-icons">
+          <i class="fa fa-search"></i>
+          <div id="cart-wrapper">
+            <p id = "cart-total"></p>
+            <a href = "/order/checkout.html">
+              <i class="fa fa-shopping-cart"></i>
+            </a>   
+          </div>
+          <i class="fa fa-user-circle-o"></i>
+        </div>
+      </nav>
+      <section class="checkout-section">
+          <h1 id="checkout-heading">Checkout</h1>
+          <div id="content-wrapper">
+              <div id="product-list">
+                <h3 class="section-heading">Total Items: <span id="total-items"></span></h3>
+              </div>
+              <div id="product-summary">
+                <h3 class="section-heading">Total Amount</h3>
+                <p>Amount: Rs <span id="total-amount"></span></p>
+                <div class="button" id="place-order">Place Order</div>
+              </div>
+          </div>
+      </section>
+      <footer>
+        <ul id="online-store">
+          <li><h3>Online Store</h3></li>
+          <li><a href="#">Men Clothing</a></li>
+          <li><a href="#">Women Clothing</a></li>
+          <li><a href="#">Men Accessories</a></li>
+          <li><a href="#">Women Accessories</a></li>
+        </ul>
+        <ul id="helpful-links">
+          <li><h3>Helpful Links</h3></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul id="partners">
+          <li><h3>Partners</h3></li>
+          <li><a href="#">Zara</a></li>
+          <li><a href="#">Pantaloons</a></li>
+          <li><a href="#">Levis</a></li>
+          <li><a href="#">UCB</a></li>
+          <li><a href="#">+ Many More</a></li>
+        </ul>
+        <ul id="address">
+          <li><h3>Address</h3></li>
+          <li><a href="#">Building 101</a></li>
+          <li><a href="#">Central Avenue</a></li>
+          <li><a href="#">LA - 907222</a></li>
+          <li><a href="#">United States</a></li>
+        </ul>
+      </footer>
+      <script src="checkout.js"></script>
+</body>
+</html>
